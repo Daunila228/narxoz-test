@@ -1,38 +1,289 @@
+/** Default large-screen (>768px) */
+
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0BBD3E;
+  padding: 10px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 96px;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo img {
+  width: 100px;
+}
+
+.contact {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 90px;
+}
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #FAFF00;
+  cursor: pointer;
+}
+
+.language-dropdown select {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.headerInfo{
+  background-color: #0BBD3E;
+  height: 481px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  font-size: 91px;
+  font-weight: 700;
+  line-height: 109.2px;
+  text-align: left;
+  color: white;
+  margin-left: 50px;
+  z-index: 100;
+}
+
+.diseases {
+  position: relative;
+  width: 100%;
+  height: 400px; 
+  overflow: hidden;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  white-space:nowrap;
+}
+.disease{
+  margin-left: 400px;
+  display: flex;
+  white-space:nowrap;
 }
 
-.App-link {
-  color: #61dafb;
+.headerDoctorContainer {
+  width: 800px;
+  height: 800px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  top: -400px;
+  left: 31%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.headerDoctor {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.headerDoctorContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 189, 62, 0.31);
+  border-radius: 50%;
+}
+.achievement-list {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  top: -780px;
+}
+.achievement{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.achievement img{
+  width: 38px;
+  margin-right: 10px;
+}
+
+.bubbles-container {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  top: -1250px;
+}
+
+.bubble {
+  border-radius: 50%;
+  background-color: rgba(11, 189, 62, 0.76);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bubble1 {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  left: 300px;
+  top: 330px
+}
+
+.bubble2 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 80px;
+  top: 100px
+}
+
+.bubble3 {
+  width: 150px;
+  height: 150px;
+  left: 70px;
+  position: relative;
+}
+
+.reviewsContainer{
+  top: -800px;
+  position: relative;
+}
+.reviewsTitle{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+  margin-left: 45px;
+}
+.reviewsPictures{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 45px;
+  position: relative;
+}
+
+.reviewsPicture{
+  width: 418.5px;
+  height: 744px;
+  top: 18px;
+  left: 44px;
+  gap: 0px;
+  opacity: 0px;
+  background: rgba(217, 217, 217, 1);
+  margin-top: 50px;
+}
+
+
+/** Tablets or small-screen laptops */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .contact {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  .feedback,
+  .phone,
+  .signup-button {
+    display: none;
+  }
+
+  .language-dropdown select {
+    margin-top: 0;
+  }
+}
+
+
+
+
+/*? mobile */
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .contact {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  .feedback,
+  .phone,
+  .signup-button {
+    display: none;
+  }
+
+  .language-dropdown select {
+    margin-top: 0;
   }
 }
