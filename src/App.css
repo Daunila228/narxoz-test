@@ -212,43 +212,202 @@
   margin-top: 50px;
 }
 
-
-/** Tablets or small-screen laptops */
-
-@media (max-width: 768px) {
-  .header {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .logo img {
-    width: 100px;
-  }
-
-  .contact {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 20px;
-  }
-
-  .feedback,
-  .phone,
-  .signup-button {
-    display: none;
-  }
-
-  .language-dropdown select {
-    margin-top: 0;
-  }
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 133, 255, 0.37);
+  padding: 20px;
+  position: relative;
+  top: -600px;
+  height: 535px;
 }
 
+.services-title h2 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 77.45px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.services-title h2 span {
+  color: #0BBD3E;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  margin-right: 150px;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.73px;
+  text-align: left;
+}
+
+.service-item p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.service-item span {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.appointment-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  height: 500px;
+  position: relative;
+  top: -350px;
+ }
+
+.form-section {
+  background-color: #0BBD3E;
+  border-radius: 20px;
+  color: white;
+  position: absolute;
+  height: 595px;
+  width: 630px;
+  padding: 20px;
+  margin-left: 100px;
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section input {
+  width: 600px;
+  height: 80px;
+  top: 3012px;
+  left: 162px;
+  gap: 0px;
+  border-radius: 40px;
+  opacity: 0px;
+  border: none;
+  margin-top: 20px;
+}
+
+.half-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.form-section button {
+  width: 220px;
+  height: 49px;
+  top: 3466px;
+  left: 337px;
+  gap: 0px;
+  border-radius: 15px;
+  opacity: 0px;
+  background: rgba(250, 255, 0, 1);
+  border: 0.5px solid rgba(0, 0, 0, 1);
+  margin-top: 60px;
+}
+
+.info-section {
+  color: white;
+  margin-left: 900px;
+}
+
+.info-section h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30.26px;
+  text-align: left;
+
+}
+.info-section h2 span{
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38.73px;
+  text-align: left;
+
+}
+
+.info-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-section li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+}
+.info-section li img {
+  margin-right: 15px;
+}
+
+.info-section li::before {
+  margin-right: 10px;
+  color: red;
+}
+
+.footer-container{
+  height: 166px;
+  display: flex;
+  flex-direction: row;
+  background: rgba(0, 144, 41, 1);
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+}
+.footer-title{
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  text-align: left;
+}
+.footer-adresses{
+  color: white;
+  text-align: left;
+}
+.links-phone{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: white;
+}
 
 
 
@@ -285,5 +444,12 @@
 
   .language-dropdown select {
     margin-top: 0;
+  }
+  .headerInfo{
+    background-image: url('./images/doctor.jpeg');
+    background-size: cover;
+  }
+  .headerInfo::after{
+    background-color: rgba(11, 189, 62, 0.31);
   }
 }
