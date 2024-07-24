@@ -10,8 +10,8 @@ export const AppointmentForm = () => {
                     <input type="text" placeholder="    Имя" />
                     <input type="text" placeholder="    Фамилия" />
                     <div className="half-input">
-                        <input type="text" placeholder="    Возраст" style={{marginRight: 20, width: '200px'}}/>
-                        <input type="text" placeholder="    Город" style={{width: '380px'}}/>
+                        <input type="text" placeholder="    Возраст"  className="age-input" style={{marginRight: 20}}/>
+                        <input type="text" placeholder="    Город" className="city-input"/>
                     </div>
                     <input type="text" placeholder="    Диагноз" />
                     <button type="submit">Записаться</button>

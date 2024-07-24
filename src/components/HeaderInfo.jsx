@@ -13,6 +13,7 @@ export const HeaderInfo = () => {
                 <div className="disease">&emsp;Эпилепсии &emsp;&emsp; Эпилепсии</div>
                 <div className="disease">&emsp;Хронические болезни</div>
                 <div className="disease">&emsp;Многое другое</div>
+                <div className="overlay"></div>
             </div>
         </div>
     );
